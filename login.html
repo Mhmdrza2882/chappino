@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ورود - چاپینو</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lalezar&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        // پالت رنگی که ارائه دادید
+                        'brand-bg': '#FDFDFB',
+                        'brand-blue': '#004FE2',
+                        'brand-light-blue': '#EBF2FF',
+                        'brand-orange': '#FF702E',
+                        'brand-text': '#585858',
+                        // خاکستрый
+                        'brand-label-gray': '#757575',
+                        // خاکستری روشن‌تر برای فیلدها
+                        'brand-input-bg': '#F0F0F0', // رنگ تقریبی از طرح
+                    },
+                    fontFamily: {
+                        // افزودن فونت لاله زار
+                        'lalezar': ['Lalezar', 'cursive'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        body {
+            font-family: 'Lalezar', cursive;
+        }
+        /* استایل سفارشی برای placeholderها */
+        ::placeholder {
+            color: #A0A0A0; /* رنگ ملایم‌تر برای placeholder */
+            font-family: 'Lalezar', cursive;
+            text-align: right;
+        }
+    </style>
+</head>
+<body class="bg-brand-light-blue min-h-screen flex items-center justify-center p-8">
+
+    <main class="flex w-full max-w-6xl overflow-hidden rounded-3xl bg-brand-bg shadow-2xl">
+        
+        <div class="w-1/2 bg-brand-light-blue p-16 flex flex-col justify-center items-center">
+            <form class="w-full max-w-sm">
+                
+                <div class="flex mb-5 rounded-xl shadow-md overflow-hidden bg-brand-input-bg">
+                    <input type="text" placeholder="نام کاربری" class="w-full p-4 text-brand-text text-right bg-brand-input-bg focus:outline-none focus:ring-2 focus:ring-brand-orange">
+                    <span class="flex items-center justify-center text-brand-label-gray p-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
+                    </span>
+                </div>
+
+                <div class="flex mb-6 rounded-xl shadow-md overflow-hidden bg-brand-input-bg">
+                    <input type="password" placeholder="رمز عبور" class="w-full p-4 text-brand-text text-right bg-brand-input-bg focus:outline-none focus:ring-2 focus:ring-brand-orange">
+                    <span class="flex items-center justify-center text-brand-label-gray p-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+                    </span>
+                </div>
+
+                <button class="w-full bg-brand-orange text-white py-3 px-6 rounded-xl text-2xl flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors">
+                    <span class="bg-white text-brand-orange rounded-full w-8 h-8 flex items-center justify-center ml-4">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"></path></svg>
+                    </span>
+                    <a href="index.html" class="w-full bg-brand-orange text-white py-3 px-6 rounded-xl text-2xl flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors">
+                    <span>ورود</span>
+                    </a>
+                </button>
+
+                <div class="flex justify-between items-center mt-4">
+                    <button class="bg-brand-label-gray text-white py-2 px-6 rounded-lg text-lg hover:bg-gray-600 transition-colors">
+                        فراموشی !
+                    </button>
+                    <div class="flex gap-3">
+                        <div class="w-16 h-12 bg-white rounded-lg shadow-md"></div>
+                        <div class="w-16 h-12 bg-white rounded-lg shadow-md"></div>
+                    </div>
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="signup.html" class="py-3 px-10 ...">
+                        ثبت نام
+                    </a>
+                </div>
+            </form>
+        </div>
+
+        <div class="w-1/2 bg-brand-bg p-12 flex flex-col justify-center items-center rounded-l-[150px]">
+            <div class="bg-gray-300 w-56 h-56 mb-12 flex items-center justify-center text-gray-500 text-2xl">
+                Logo
+            </div>
+            <div class="text-center">
+                <span class="text-6xl text-brand-blue">چاپینو</span>
+                <hr class="border-t-4 border-brand-blue w-4/5 mx-auto mt-2">
+            </div>
+        </div>
+        
+    </main>
+
+</body>
+</html>
